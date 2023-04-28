@@ -1,12 +1,12 @@
-import React from "react";
-import { movies } from "../data";
+import React from 'react';
+import { movies } from '../data';
 
 function Movies() {
   return (
     <div>
       <h1>Movies Page</h1>
       {movies.map(movie => (
-        <div key={movie.id}>
+        <div key={movie.title}>
           <h2>{movie.title}</h2>
           <p>Time: {movie.time}</p>
           <ul>
